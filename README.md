@@ -52,6 +52,8 @@ The primary objective of this project is to develop a machine learning model tha
 - Matplotlib
 - Seaborn
 - Scikit-learn
+- Streamlit
+- Joblib
 - Jupyter Notebook
 
 ## Methodology
@@ -76,10 +78,10 @@ The following steps were followed during the development of the project:
 
 | Model | Accuracy | Precision | Recall | F1 Score |
 |-------|----------|-----------|--------|----------|
-| Logistic Regression | 0.965 | 0.97 | 0.96 | 0.96 |
-| Decision Tree Classifier | 0.830 | 0.83 | 0.83 | 0.83 |
-| Random Forest Classifier | 0.880 | 0.88 | 0.88 | 0.88 |
-| Support Vector Classifier (SVC) | 0.895 | 0.90 | 0.90 | 0.90 |
+| Logistic Regression | 96.5% | 97% | 96% | 96% |
+| Decision Tree Classifier | 83.0% | 83% | 83% | 83% |
+| Random Forest Classifier | 88.0% | 88% | 88% | 88% |
+| Support Vector Classifier (SVC) | 89.5% | 90% | 90% | 90% |
 
 ## Final Model Selection
 
@@ -89,6 +91,25 @@ Among all the models, Logistic Regression achieved the best overall performance 
 
 Since accurate price prediction is important for market analysis and business decision-making, **the Logistic Regression model was selected as the final model for Mobile Phone Price Prediction.**
 
+## Streamlit Web Application
+
+A Streamlit-based web application was developed to provide an interactive interface for Mobile Price Prediction.
+
+The application allows users to enter mobile hardware specifications and instantly predicts the corresponding mobile price category using the trained machine learning model.
+
+## Project Files
+
+- `Mobile Price Prediction.ipynb` - Complete notebook containing data preprocessing, model training, and evaluation..
+- `app.py` - Streamlit web application for mobile price prediction.
+- `mobile_price_model.pkl` - Saved trained machine learning model.
+- `mobile_price_scaler.pkl` - Saved feature scaler used during preprocessing.
+- `requirements.txt` - List of project dependencies.
+- `README.md` - Project documentation.
+
 ## Conclusion
 
-A Mobile Price Prediction system was successfully developed and multiple machine learning algorithms were trained and evaluated for prediction performance. The developed system can assist manufacturers, retailers, and consumers in estimating mobile price categories based on device specifications and hardware features.
+A Mobile Price Prediction system was successfully developed and multiple machine learning algorithms were trained and evaluated for prediction performance. 
+
+The developed system can assist users in estimating mobile price categories based on device specifications and hardware features.
+
+
